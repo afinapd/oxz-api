@@ -2,6 +2,10 @@
 
 This project contains automated test cases for the DemoQA BookStore API using Python with Behave BDD framework and requests library.
 
+## Video Execution
+Watch the test automation in action:
+[Click here to watch on GDrive Link](https://drive.google.com/file/d/1b4mmqTN8NJ7Dop_zyeaEyQEUnKo8NiAm/view?usp=sharing)
+
 ## Features Tested
 
 1. **Account**
