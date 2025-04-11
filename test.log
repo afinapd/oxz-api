@@ -1,0 +1,223 @@
+2025-04-11 01:54:39,175 - INFO - Starting test session at 2025-04-11 01:54:39.175930
+2025-04-11 01:54:39,176 - INFO - 
+Starting feature: BookStore Account API Testing
+2025-04-11 01:54:39,177 - INFO - 
+Starting scenario: Generate auth token
+2025-04-11 01:54:40,905 - INFO - Scenario passed: Generate auth token
+2025-04-11 01:54:40,905 - INFO - 
+Starting scenario: Login with valid credentials
+2025-04-11 01:54:42,003 - INFO - Scenario passed: Login with valid credentials
+2025-04-11 01:54:42,004 - INFO - 
+Starting scenario: Get user account details
+2025-04-11 01:54:50,332 - INFO - Scenario passed: Get user account details
+2025-04-11 01:54:50,333 - INFO - 
+Starting scenario: Create new user account
+2025-04-11 01:54:51,694 - INFO - Scenario passed: Create new user account
+2025-04-11 01:54:51,695 - INFO - 
+Starting scenario: Delete user account
+2025-04-11 01:54:59,950 - INFO - Scenario passed: Delete user account
+2025-04-11 01:54:59,951 - INFO - Completed feature: BookStore Account API Testing
+2025-04-11 01:54:59,951 - INFO - 
+Starting feature: BookStore API Testing
+2025-04-11 01:54:59,951 - INFO - 
+Starting scenario: Get all books
+2025-04-11 01:55:00,949 - INFO - Scenario passed: Get all books
+2025-04-11 01:55:00,949 - INFO - 
+Starting scenario: Get a specific book by ISBN
+2025-04-11 01:55:01,926 - INFO - Scenario passed: Get a specific book by ISBN
+2025-04-11 01:55:01,926 - INFO - 
+Starting scenario: Add books to user collection
+2025-04-11 01:55:10,604 - INFO - Scenario passed: Add books to user collection
+2025-04-11 01:55:11,554 - WARNING - Failed to cleanup books: Expecting value: line 1 column 1 (char 0)
+2025-04-11 01:55:11,554 - INFO - 
+Starting scenario: Delete books from user collection
+2025-04-11 01:55:21,745 - INFO - Scenario passed: Delete books from user collection
+2025-04-11 01:55:21,746 - INFO - 
+Starting scenario: Delete book from user collection
+2025-04-11 01:55:30,847 - INFO - Scenario passed: Delete book from user collection
+2025-04-11 01:55:30,848 - INFO - Completed feature: BookStore API Testing
+2025-04-11 01:55:30,848 - INFO - 
+Completed test session at 2025-04-11 01:55:30.848352
+
+2025-04-11 02:02:18,261 - INFO - Starting test session at 2025-04-11 02:02:18.261005
+2025-04-11 02:02:18,262 - INFO - 
+Starting feature: BookStore Account API Testing
+2025-04-11 02:02:18,262 - INFO - 
+Starting scenario: Generate auth token
+2025-04-11 02:02:18,262 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 02:02:19,598 - INFO - Response: 200
+2025-04-11 02:02:19,601 - INFO - Scenario passed: Generate auth token
+2025-04-11 02:02:19,602 - INFO - 
+Starting scenario: Login with valid credentials
+2025-04-11 02:02:19,602 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 02:02:20,778 - INFO - Response: 200
+2025-04-11 02:02:20,781 - INFO - Scenario passed: Login with valid credentials
+2025-04-11 02:02:20,782 - INFO - 
+Starting scenario: Get user account details
+2025-04-11 02:02:22,787 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 02:02:24,257 - INFO - Response: 200
+2025-04-11 02:02:26,264 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 02:02:27,320 - INFO - Response: 200
+2025-04-11 02:02:27,323 - INFO - GET https://demoqa.com/Account/v1/User/30e4bb09-77df-4ac7-9b11-abf64ab0f24c
+2025-04-11 02:02:28,783 - INFO - Response: 200
+2025-04-11 02:02:28,785 - INFO - Scenario passed: Get user account details
+2025-04-11 02:02:28,785 - INFO - 
+Starting scenario: Create new user account
+2025-04-11 02:02:28,786 - INFO - POST https://demoqa.com/Account/v1/User
+2025-04-11 02:02:30,148 - INFO - Response: 201
+2025-04-11 02:02:30,151 - INFO - Scenario passed: Create new user account
+2025-04-11 02:02:30,151 - INFO - 
+Starting scenario: Delete user account
+2025-04-11 02:02:32,158 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 02:02:33,630 - INFO - Response: 200
+2025-04-11 02:02:35,636 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 02:02:36,752 - INFO - Response: 200
+2025-04-11 02:02:36,753 - INFO - DELETE https://demoqa.com/Account/v1/User/2e0e445a-4ba5-4694-954f-b95967c7d358
+2025-04-11 02:02:38,465 - INFO - Response: 204
+2025-04-11 02:02:38,468 - INFO - Scenario passed: Delete user account
+2025-04-11 02:02:38,468 - INFO - Completed feature: BookStore Account API Testing
+2025-04-11 02:02:38,469 - INFO - 
+Starting feature: BookStore API Testing
+2025-04-11 02:02:38,469 - INFO - 
+Starting scenario: Get all books
+2025-04-11 02:02:38,470 - INFO - GET https://demoqa.com/BookStore/v1/Books
+2025-04-11 02:02:39,512 - INFO - Response: 200
+2025-04-11 02:02:39,518 - INFO - Scenario passed: Get all books
+2025-04-11 02:02:39,518 - INFO - 
+Starting scenario: Get a specific book by ISBN
+2025-04-11 02:02:39,518 - INFO - GET https://demoqa.com/BookStore/v1/Book
+2025-04-11 02:02:40,478 - INFO - Response: 200
+2025-04-11 02:02:40,482 - INFO - Scenario passed: Get a specific book by ISBN
+2025-04-11 02:02:40,482 - INFO - 
+Starting scenario: Add books to user collection
+2025-04-11 02:02:42,488 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 02:02:43,914 - INFO - Response: 200
+2025-04-11 02:02:45,915 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 02:02:47,246 - INFO - Response: 200
+2025-04-11 02:02:47,249 - INFO - GET https://demoqa.com/Account/v1/User/30e4bb09-77df-4ac7-9b11-abf64ab0f24c
+2025-04-11 02:02:48,728 - INFO - Response: 200
+2025-04-11 02:02:48,731 - INFO - POST https://demoqa.com/BookStore/v1/Books
+2025-04-11 02:02:49,791 - INFO - Response: 201
+2025-04-11 02:02:49,793 - INFO - Scenario passed: Add books to user collection
+2025-04-11 02:02:49,793 - INFO - GET https://demoqa.com/Account/v1/User/30e4bb09-77df-4ac7-9b11-abf64ab0f24c/Books
+2025-04-11 02:02:50,746 - INFO - Response: 200
+2025-04-11 02:02:50,746 - WARNING - Failed to cleanup books: Expecting value: line 1 column 1 (char 0)
+2025-04-11 02:02:50,747 - INFO - 
+Starting scenario: Delete books from user collection
+2025-04-11 02:02:52,753 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 02:02:54,726 - INFO - Response: 200
+2025-04-11 02:02:56,733 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 02:02:57,879 - INFO - Response: 200
+2025-04-11 02:02:57,880 - INFO - POST https://demoqa.com/BookStore/v1/Books
+2025-04-11 02:02:59,067 - INFO - Response: 400
+2025-04-11 02:02:59,069 - INFO - GET https://demoqa.com/Account/v1/User/30e4bb09-77df-4ac7-9b11-abf64ab0f24c
+2025-04-11 02:03:00,101 - INFO - Response: 200
+2025-04-11 02:03:00,102 - INFO - DELETE https://demoqa.com/BookStore/v1/Books?UserId=30e4bb09-77df-4ac7-9b11-abf64ab0f24c
+2025-04-11 02:03:01,262 - INFO - Response: 204
+2025-04-11 02:03:01,264 - INFO - Scenario passed: Delete books from user collection
+2025-04-11 02:03:01,264 - INFO - 
+Starting scenario: Delete book from user collection
+2025-04-11 02:03:03,271 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 02:03:04,862 - INFO - Response: 200
+2025-04-11 02:03:06,868 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 02:03:07,880 - INFO - Response: 200
+2025-04-11 02:03:07,881 - INFO - POST https://demoqa.com/BookStore/v1/Books
+2025-04-11 02:03:08,924 - INFO - Response: 201
+2025-04-11 02:03:08,925 - INFO - DELETE https://demoqa.com/BookStore/v1/Book
+2025-04-11 02:03:10,051 - INFO - Response: 204
+2025-04-11 02:03:10,054 - INFO - Scenario passed: Delete book from user collection
+2025-04-11 02:03:10,055 - INFO - Completed feature: BookStore API Testing
+2025-04-11 02:03:10,055 - INFO - 
+Completed test session at 2025-04-11 02:03:10.055326
+
+2025-04-11 20:55:49,483 - INFO - Starting test session at 2025-04-11 20:55:49.483238
+2025-04-11 20:55:49,484 - INFO - 
+Starting feature: BookStore Account API Testing
+2025-04-11 20:55:49,484 - INFO - 
+Starting scenario: Generate auth token
+2025-04-11 20:55:49,484 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 20:55:51,944 - INFO - Response: 200
+2025-04-11 20:55:51,948 - INFO - Scenario passed: Generate auth token
+2025-04-11 20:55:51,949 - INFO - 
+Starting scenario: Login with valid credentials
+2025-04-11 20:55:51,949 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 20:55:53,070 - INFO - Response: 200
+2025-04-11 20:55:53,074 - INFO - Scenario passed: Login with valid credentials
+2025-04-11 20:55:53,075 - INFO - 
+Starting scenario: Get user account details
+2025-04-11 20:55:55,082 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 20:55:56,485 - INFO - Response: 200
+2025-04-11 20:55:58,491 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 20:55:59,535 - INFO - Response: 200
+2025-04-11 20:55:59,538 - INFO - GET https://demoqa.com/Account/v1/User/30e4bb09-77df-4ac7-9b11-abf64ab0f24c
+2025-04-11 20:56:01,093 - INFO - Response: 200
+2025-04-11 20:56:01,096 - INFO - Scenario passed: Get user account details
+2025-04-11 20:56:01,096 - INFO - 
+Starting scenario: Create new user account
+2025-04-11 20:56:01,097 - INFO - POST https://demoqa.com/Account/v1/User
+2025-04-11 20:56:02,565 - INFO - Response: 201
+2025-04-11 20:56:02,567 - INFO - Scenario passed: Create new user account
+2025-04-11 20:56:02,568 - INFO - 
+Starting scenario: Delete user account
+2025-04-11 20:56:04,574 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 20:56:05,960 - INFO - Response: 200
+2025-04-11 20:56:07,964 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 20:56:09,259 - INFO - Response: 200
+2025-04-11 20:56:09,261 - INFO - DELETE https://demoqa.com/Account/v1/User/75b7b483-47d9-45c6-b664-82df362ea424
+2025-04-11 20:56:11,026 - INFO - Response: 204
+2025-04-11 20:56:11,028 - INFO - Scenario passed: Delete user account
+2025-04-11 20:56:11,029 - INFO - Completed feature: BookStore Account API Testing
+2025-04-11 20:56:11,029 - INFO - 
+Starting feature: BookStore API Testing
+2025-04-11 20:56:11,029 - INFO - 
+Starting scenario: Get all books
+2025-04-11 20:56:11,030 - INFO - GET https://demoqa.com/BookStore/v1/Books
+2025-04-11 20:56:12,035 - INFO - Response: 200
+2025-04-11 20:56:12,046 - INFO - Scenario passed: Get all books
+2025-04-11 20:56:12,047 - INFO - 
+Starting scenario: Get a specific book by ISBN
+2025-04-11 20:56:12,047 - INFO - GET https://demoqa.com/BookStore/v1/Book
+2025-04-11 20:56:13,000 - INFO - Response: 200
+2025-04-11 20:56:13,004 - INFO - Scenario passed: Get a specific book by ISBN
+2025-04-11 20:56:13,004 - INFO - 
+Starting scenario: Add books to user collection
+2025-04-11 20:56:15,009 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 20:56:16,715 - INFO - Response: 200
+2025-04-11 20:56:18,726 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 20:56:19,802 - INFO - Response: 200
+2025-04-11 20:56:19,805 - INFO - GET https://demoqa.com/Account/v1/User/30e4bb09-77df-4ac7-9b11-abf64ab0f24c
+2025-04-11 20:56:20,866 - INFO - Response: 200
+2025-04-11 20:56:20,867 - INFO - POST https://demoqa.com/BookStore/v1/Books
+2025-04-11 20:56:21,909 - INFO - Response: 201
+2025-04-11 20:56:21,912 - INFO - Scenario passed: Add books to user collection
+2025-04-11 20:56:21,912 - INFO - GET https://demoqa.com/Account/v1/User/30e4bb09-77df-4ac7-9b11-abf64ab0f24c/Books
+2025-04-11 20:56:22,922 - INFO - Response: 200
+2025-04-11 20:56:22,923 - WARNING - Failed to cleanup books: Expecting value: line 1 column 1 (char 0)
+2025-04-11 20:56:22,925 - INFO - 
+Starting scenario: Delete books from user collection
+2025-04-11 20:56:24,931 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 20:56:26,677 - INFO - Response: 200
+2025-04-11 20:56:28,683 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 20:56:29,780 - INFO - Response: 200
+2025-04-11 20:56:29,783 - INFO - POST https://demoqa.com/BookStore/v1/Books
+2025-04-11 20:56:30,927 - INFO - Response: 400
+2025-04-11 20:56:30,929 - INFO - GET https://demoqa.com/Account/v1/User/30e4bb09-77df-4ac7-9b11-abf64ab0f24c
+2025-04-11 20:56:31,982 - INFO - Response: 200
+2025-04-11 20:56:31,983 - INFO - DELETE https://demoqa.com/BookStore/v1/Books?UserId=30e4bb09-77df-4ac7-9b11-abf64ab0f24c
+2025-04-11 20:56:33,241 - INFO - Response: 204
+2025-04-11 20:56:33,243 - INFO - Scenario passed: Delete books from user collection
+2025-04-11 20:56:33,244 - INFO - 
+Starting scenario: Delete book from user collection
+2025-04-11 20:56:35,246 - INFO - POST https://demoqa.com/Account/v1/GenerateToken
+2025-04-11 20:56:37,025 - INFO - Response: 200
+2025-04-11 20:56:39,027 - INFO - POST https://demoqa.com/Account/v1/Login
+2025-04-11 20:56:40,190 - INFO - Response: 200
+2025-04-11 20:56:40,191 - INFO - POST https://demoqa.com/BookStore/v1/Books
+2025-04-11 20:56:41,241 - INFO - Response: 201
+2025-04-11 20:56:41,242 - INFO - DELETE https://demoqa.com/BookStore/v1/Book
+2025-04-11 20:56:42,429 - INFO - Response: 204
+2025-04-11 20:56:42,431 - INFO - Scenario passed: Delete book from user collection
+2025-04-11 20:56:42,432 - INFO - Completed feature: BookStore API Testing
+2025-04-11 20:56:42,432 - INFO - 
+Completed test session at 2025-04-11 20:56:42.432414
+
