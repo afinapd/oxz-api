@@ -1,28 +1,34 @@
-# DemoQA BookStore API Test Automation
+# DemoQA API Testing
 
-This project contains API automation tests for the DemoQA BookStore API using Python with Behave (Cucumber).
+This project contains automated test cases for the DemoQA BookStore API using Python with Behave BDD framework and requests library.
 
-## Project Structure
+## Features Tested
 
-```
-├── features/
-│   ├── bookstore.feature    # Test scenarios in Gherkin
-│   ├── environment.py       # Test environment setup
-│   └── steps/
-│       └── bookstore_steps.py  # Step definitions
-├── src/
-│   └── api/
-│       └── api_client.py    # API client implementation
-├── .env.example            # Environment variables template
-└── requirements.txt        # Project dependencies
-```
+1. **Account**
+   - Generate auth token
+   - Login with valid credentials
+   - Get user account details
+   - Create new user account
+   - Delete user account
+
+2. **Bookstore**
+   - Get all books
+   - Get a specific book by ISBN
+   - Add books to user collection
+   - Delete books from user collection
+   - Delete book from user collection
+
+## Prerequisites
+
+- Python 3.8 or higher
+- Virtual environment (recommended)
 
 ## Setup
 
-1. Create and activate a virtual environment:
+1. Create and activate virtual environment:
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+python -m venv venv
+source venv/bin/activate  # For Unix/macOS
 ```
 
 2. Install dependencies:
@@ -30,45 +36,62 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Configure environment variables:
-```bash
-cp .env.example .env
-```
-
-4. Edit `.env` with your credentials:
+3. Set up environment variables in `.env` file:
 ```
 TEST_USERNAME=your_username
 TEST_PASSWORD=your_password
 TEST_USER_ID=your_user_id
 ```
 
+## Project Structure
+
+```
+oxz-api/
+├── features/
+│   ├── steps/              # Step Definitions
+│   │   ├── account_steps.py
+│   │   ├── bookstore_steps.py
+│   │   └── common_steps.py
+│   ├── src/
+│   │   └── api/           # API Client
+│   │       └── api_client.py
+│   ├── bookstore.feature
+│   └── environment.py
+├── requirements.txt
+└── README.md
+```
+
 ## Running Tests
 
-### Run all tests:
+Run all tests:
 ```bash
-behave
+behave -f pretty features/
 ```
 
-### Run non-authenticated tests only:
+Run specific feature:
 ```bash
-behave --tags=-auth
+behave -f pretty features/bookstore.feature
 ```
 
-### Run specific feature:
+Run tests with tags:
 ```bash
-behave features/bookstore.feature
+behave -f pretty --tags=@GET_Books features/
 ```
 
-### Run with detailed output:
-```bash
-behave -v
-```
+## Test Reports
 
-## Test Scenarios
+Test results are displayed in the console with the following information:
+- Number of features passed/failed
+- Number of scenarios passed/failed
+- Number of steps passed/failed/undefined
+- Total execution time
+- Detailed logs for API requests and responses
 
-1. Get all books
-2. Get specific book details
-3. Search for non-existent book
-4. Add book to collection (authenticated)
-5. Delete book from collection (authenticated)
-6. View user's book collection (authenticated)
+## API Client
+
+The project uses a custom APIClient class that:
+- Handles authentication and token management
+- Provides methods for all BookStore API operations
+- Includes request/response logging
+- Maintains session state
+- Implements proper error handling
